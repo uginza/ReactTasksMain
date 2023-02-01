@@ -7,13 +7,13 @@ export type UncontrolledAccordionType = {
 }
 export type UncontrolledAccordionTitleType = {
     title: string
+    onClick:()=>void
 }
 
 export function UncontrolledAccordion(props:UncontrolledAccordionType) {
 let [collapsed,setCollapsed]=useState(false)
     return <div>
-        <UncontrolledAccordionTitle title={props.titleValue}/>
-       <button onClick={()=>{setCollapsed(!collapsed)}}>ЖМИ</button>
+        <UncontrolledAccordionTitle title={props.titleValue} onClick={()=>{setCollapsed(!collapsed)}}/>
         {!collapsed && <UncontrolledAccordionBody/>}
     </div>
 

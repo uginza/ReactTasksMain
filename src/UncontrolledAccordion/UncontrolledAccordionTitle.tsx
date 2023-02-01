@@ -4,7 +4,7 @@ import {UncontrolledAccordionTitleType} from "./UncontrolledAccordion";
 export function UncontrolledAccordionTitle(props:UncontrolledAccordionTitleType) {
     return (
         <div>
-            <p>{props.title}</p>
+            <p onClick={props.onClick}>{props.title}</p>
         </div>
     );
 }
