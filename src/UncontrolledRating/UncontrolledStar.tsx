@@ -3,10 +3,11 @@ type StarType={
     selected:boolean
 }
 export function UncontrolledStar(props:StarType) {
-    if (props.selected === true) {
-        return <span><b>Star</b></span>
-    } else {
-        return <span>Star </span>
-    }
+   return <span>{props.selected?<b>Star</b>:"Star"}</span>
+
+    // if (props.selected === true) {
+    //     return <span><b>Star</b></span>
+    // } else {
+    //     return <span>Star </span>
 
 }
