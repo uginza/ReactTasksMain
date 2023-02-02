@@ -6,7 +6,7 @@ import {AccordionBody} from "./AccordionBody";
 export type AccordionTitleType = {
     title: string
     collapsed:boolean
-    onClick:()=>void
+    onClick:(collapsed:boolean)=>void
 }
 
 export function Accordion(props: AccordionTitleType) {
